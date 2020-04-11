@@ -5,14 +5,14 @@ using System.Collections.Generic;
 namespace Strategy.Tests
 {
     [TestFixture]
-    public class NextCard_Tests
+    public class MaxCard_Tests
     {
         private IStrategy strategy;
 
         [SetUp]
         public void SetUp()
         {
-            strategy = new NextCard();
+            strategy = new MaxCard();
         }
 
         [Test]
@@ -28,7 +28,7 @@ namespace Strategy.Tests
             // test
             var result = strategy.SelectCard(prizeCard, hand, maxCard);
 
-            Assert.AreEqual(11, result);
+            Assert.AreEqual(33, result);
         }
     }
 }

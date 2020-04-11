@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Strategy
 {
-    public class NextCard : IStrategy
+    public class MaxCard : IStrategy
     {
        public int SelectCard(int prizeCard, List<int> hand, int maxCard) {
-           return hand[0];
+           return hand.Max(i => i);
        }
     }
 }
