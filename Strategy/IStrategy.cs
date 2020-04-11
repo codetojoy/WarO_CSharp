@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Game.Services
+namespace Strategy
 {
     public interface IStrategy
     {
-       int selectCard(int prizeCard, List<int> hand, int maxCard);
+       int SelectCard(int prizeCard, List<int> hand, int maxCard);
     }
 }
