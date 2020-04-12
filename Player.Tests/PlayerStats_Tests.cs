@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using Game.Services;
+using Player;
 
-namespace Game.UnitTests.Services
+namespace Player.UnitTests
 {
     [TestFixture]
     public class PlayerStats_Tests

@@ -1,7 +1,8 @@
 ﻿using System;
 using Strategy;
+using Game.Services;
 
-namespace Game.Services
+namespace Player
 {
     public class Player
     {
