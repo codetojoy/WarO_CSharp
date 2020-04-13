@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Player
 {
@@ -14,12 +15,21 @@ namespace Player
             this.cards = cards;
         }
 
+        public bool Contains(int card)
+        {
+            return list.Contains(card);
+        }
+
         public Hand Select(int card)
         {
             Hand newHand = null;
 
-            if (cards.Contains(card))
+            if (Contains(card))
             {
+                var filteredList = from c in cards
+                                   where c != card
+                                   select c;
+                newHand = new Hand(new List<int>(filteredList));
             }
             else
             {

@@ -22,10 +22,23 @@ namespace Player.UnitTests
         }
 
         [Test]
+        public void Select_Basic()
+        {
+            var card = 20;
+
+            // test
+            var result = hand.Select(card);
+
+            Assert.False(Object.ReferenceEquals(result, hand));
+            Assert.False(result.Contains(card));
+        }
+
+        [Test]
         public void Select_Illegal()
         {
+            var card = 5150;
             // test
-            var ex = Assert.Throws<ArgumentException>(() => hand.Select(5150));
+            var ex = Assert.Throws<ArgumentException>(() => hand.Select(card));
 
             Assert.That(ex.Message, Is.EqualTo("illegal selection (Parameter 'card')"));
         }
