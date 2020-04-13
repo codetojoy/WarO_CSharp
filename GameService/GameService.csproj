@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Strategy\Strategy.csproj" />
-    <ProjectReference Include="..\Table\Table.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

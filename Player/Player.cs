@@ -1,7 +1,6 @@
 ﻿using System;
 using Strategy;
 using Game.Services;
-using Table;
 
 namespace Player
 {

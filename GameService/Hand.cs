@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Table
+namespace Game.Services
 {
     public class Hand
     {
