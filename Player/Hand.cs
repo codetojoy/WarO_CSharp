@@ -17,7 +17,7 @@ namespace Player
 
         public bool Contains(int card)
         {
-            return list.Contains(card);
+            return cards.Contains(card);
         }
 
         public Hand Select(int card)
